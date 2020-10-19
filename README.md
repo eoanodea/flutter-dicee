@@ -1,31 +1,46 @@
-![App Brewery Banner](https://github.com/londonappbrewery/Images/blob/master/AppBreweryBanner.png)
+# Simple Roll the Dice Flutter App 🎲
 
+## Description
 
-# Dicee 🎲
+Based on a tutorial by [London App Brewery on Linkedin Learning](https://www.linkedin.com/learning-login/share?forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fflutter-part-04-building-an-app-with-state%3Ftrk%3Dshare_ent_url&account=56744273)
 
-## Our Goal
+This application is a simple dice rolling app built using Flutter. It displays two dies, and once either dice are clicked, it rolls them and returns a random dice between 1 and 6.
 
-The objective of this tutorial is to introduce you to the core programming concepts that will form the foundation of most of the apps you’ll build in the future. This app will teach you how to make apps with functionality using setState() inside Stateful Flutter widgets.
+## Demo
 
+![Finished App](https://github.com/eoanodea/flutter-roll-the-dice/master/roll-the-dice-demo.gif)
 
-## What you will create
+## What you need to run this code
 
-We’re going to make a Las Vegas dice app. You can make the die roll at the press of a button. With this app in your pocket, you’ll be able to settle any score on the go!
+### macOS
 
-![Finished App](https://github.com/londonappbrewery/Images/blob/master/dicee-demo.gif)
+1. macOS (64-bit)
+2. At least 2.8 GB Disk Space
+3. `bash`, `curl`, `git`, `mkdir`, `rm`, `unzip` & `which`
 
-## What you will learn
+### Windows
 
-- How to use Flutter stateless widgets to design the user interface.
-- How to use Flutter stateful widgets to update the user interface.
-- How to change the properties of various widgets.
-- How to use onPressed listeners to detect when buttons are pressed.
-- How to use setState to mark the widget tree as dirty and requiring update on the next render.
-- How to use Expanded to make widgets adapt to screen dimensions.
-- Understand and use string interpolation.
-- Learn about basic dart programming concepts such as data types and functions.
-- Code and use gesture controls.
+1. Windows 7 SP1 or later (64-bit), x86-64 based
+2. At least 1.32 GB Disk Space
+3. Windows PowerShell > 5.0
+4. Git for Windows
 
->This is a companion project to The App Brewery's Complete Flutter Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+## How to run this code
 
-![End Banner](https://github.com/londonappbrewery/Images/blob/master/readme-end-banner.png)
+1. Clone this repository, and cd into it
+2. Run `flutter pub get` to install the required dependencies
+3. Make sure you have a device, simulator or emulator set up
+4. Run `flutter run`
+
+It is recommended to follow [Flutter's documentation](https://flutter.dev/docs/get-started/install) on installing and running the app
+
+## What you can run this code on
+
+This application can be compiled and launched on the following platforms:
+
+1. iOS Physical Device
+2. iPhone Simulator
+3. Android Physical Device
+4. Android Simulator
+
+Instructions for all can be found on [Flutter's Documentation](https://flutter.dev/docs/get-started/install)
