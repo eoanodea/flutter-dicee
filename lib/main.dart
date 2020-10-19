@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,7 +8,7 @@ void main() {
         backgroundColor: Colors.red,
         appBar: AppBar(
           title: Text('Dicee'),
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.black,
         ),
         body: DicePage(),
       ),
@@ -27,39 +26,30 @@ class _DicePageState extends State<DicePage> {
 
   @override
   Widget build(BuildContext context) {
-    helloWorld(name) {
-      Random random = new Random();
-      int randomNumber = (random.nextInt(6) + 1);
-
-      if (name == 'left') {
-        setState(() {
-          leftDiceNum = randomNumber;
-        });
-      } else {
-        setState(() {
-          rightDiceNum = randomNumber;
-        });
-        print('right! $randomNumber');
-      }
+    /// Generates two random numbers between 1 - 6
+    /// Updates both the left and right dice number
+    updateDiceNum() {
+      setState(() {
+        leftDiceNum = (Random().nextInt(6) + 1);
+        rightDiceNum = (Random().nextInt(6) + 1);
+      });
     }
 
     return Center(
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
-            'left: $leftDiceNum, right: $rightDiceNum',
-          ),
           Row(
             children: <Widget>[
               Expanded(
                 child: FlatButton(
-                  onPressed: () => helloWorld('left'),
+                  onPressed: () => updateDiceNum(),
                   child: Image.asset('images/dice$leftDiceNum.png'),
                 ),
               ),
               Expanded(
                 child: FlatButton(
-                  onPressed: () => helloWorld('right'),
+                  onPressed: () => updateDiceNum(),
                   child: Image.asset('images/dice$rightDiceNum.png'),
                 ),
               ),
