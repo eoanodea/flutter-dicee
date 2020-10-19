@@ -8,7 +8,7 @@ This application is a simple dice rolling app built using Flutter. It displays t
 
 ## Demo
 
-![Finished App](https://github.com/eoanodea/flutter-roll-the-dice/master/roll-the-dice-demo.gif)
+![Finished App](https://github.com/eoanodea/flutter-roll-the-dice/blob/master/roll-the-dice-demo.gif)
 
 ## What you need to run this code
 
