@@ -28,7 +28,7 @@ class _DicePageState extends State<DicePage> {
   Widget build(BuildContext context) {
     /// Generates two random numbers between 1 - 6
     /// Updates both the left and right dice number
-    updateDiceNum() {
+    void updateDiceNum() {
       setState(() {
         leftDiceNum = (Random().nextInt(6) + 1);
         rightDiceNum = (Random().nextInt(6) + 1);
@@ -38,7 +38,7 @@ class _DicePageState extends State<DicePage> {
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [
+        children: <Widget>[
           Row(
             children: <Widget>[
               Expanded(
